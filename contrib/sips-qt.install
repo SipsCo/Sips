@@ -1,0 +1,6 @@
+usr/local/bin/sips-qt usr/bin
+share/pixmaps/bitcoin32.xpm usr/share/pixmaps
+share/pixmaps/bitcoin16.xpm usr/share/pixmaps
+share/pixmaps/bitcoin128.png usr/share/pixmaps
+debian/sips-qt.desktop usr/share/applications
+debian/sips-qt.protocol usr/share/kde4/services/

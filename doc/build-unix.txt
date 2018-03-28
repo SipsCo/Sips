@@ -1,0 +1,70 @@
+Copyright (c) 2009-2012 Bitcoin Developers
+Distributed under the MIT/X11 software license, see the accompanying
+file license.txt or http://www.opensource.org/licenses/mit-license.php.
+This product includes software developed by the OpenSSL Project for use in
+the OpenSSL Toolkit (http://www.openssl.org/).  This product includes
+cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP
+software written by Thomas Bernard.
+
+
+UNIX BUILD NOTES
+================
+
+To Build Headless
+-----------------
+
+sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
+
+sudo apt-get install qt5-default qt5-qmake qtbase5-dev-tools qttools5-dev-tools build-essential libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libssl-dev libdb++-dev libminiupnpc-dev 
+
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:bitcoin/bitcoin
+sudo apt-get update
+sudo apt-get install libdb4.8-dev libdb4.8++-dev
+
+sudo apt-get install libqrencode-dev
+
+git clone https://github.com/SIPS-Project/Sips.git
+cd Sips/src/secp256k1
+chmod +x autogen.sh
+sudo ./autogen.sh
+sudo ./configure
+sudo make && make install
+cd
+cd Sips/src/leveldb
+sudo sh build_detect_platform build_config.mk .
+cd
+cd Sips/src
+sudo make -f makefile.unix
+strip sipsd
+LD_LIBRARY_PATH=/usr/local/lib
+export LD_LIBRARY_PATH
+
+
+To Build Qt Wallet
+------------------
+
+sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
+
+sudo apt-get install qt5-default qt5-qmake qtbase5-dev-tools qttools5-dev-tools build-essential libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libssl-dev libdb++-dev libminiupnpc-dev 
+
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:bitcoin/bitcoin
+sudo apt-get update
+sudo apt-get install libdb4.8-dev libdb4.8++-dev
+
+sudo apt-get install libqrencode-dev
+
+git clone https://github.com/SIPS-Project/Sips.git
+cd Sips/src/secp256k1
+chmod +x autogen.sh
+sudo ./autogen.sh
+sudo ./configure
+sudo make && make install
+cd
+cd Sips/src/leveldb
+sudo sh build_detect_platform build_config.mk .
+cd
+cd Sips
+sudo qmake SIPS-Qt.pro
+sudo make -jnumofcoreshere

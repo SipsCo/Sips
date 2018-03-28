@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=SIPS
+Comment=SIPS P2P Cryptocurrency
+Comment[fr]=SIPS, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=SIPS, eşten eşe kriptografik sanal para birimi
+Exec=sips-qt %u
+Terminal=false
+Type=Application
+Icon=sips128
+MimeType=x-scheme-handler/sips;
+Categories=Office;Finance;
