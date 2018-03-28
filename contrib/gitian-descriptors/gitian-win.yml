@@ -19,7 +19,7 @@ packages:
 - "bsdmainutils"
 reference_datetime: "2013-06-01 00:00:00"
 remotes:
-- "url": "https://github.com/SIPS-Project/Sips.git"
+- "url": "https://github.com/SipsCo/Sips.git"
   "dir": "sips"
 files:
 - "qt-win32-5.5.0-gitian.zip"

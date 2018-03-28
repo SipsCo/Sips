@@ -23,8 +23,8 @@ Build-Depends: debhelper,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
 Homepage: http://www.sips.org
-Vcs-Git: git://github.com/SIPS-Project/SIPS.git
-Vcs-Browser: http://github.com/SIPS-Project/SIPS
+Vcs-Git: git://github.com/SipsCo/SIPS.git
+Vcs-Browser: http://github.com/SipsCo/SIPS
 
 Package: sipsd
 Architecture: any

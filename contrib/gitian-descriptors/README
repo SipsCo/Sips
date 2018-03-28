@@ -161,7 +161,7 @@ login again:
 $ ssh debian@localhost -p 22222
 
 $ git clone https://github.com/devrandom/gitian-builder.git
-$ git clone https://github.com/SIPS-Project/Sips.git sips
+$ git clone https://github.com/SipsCo/Sips.git sips
 
 $ cd gitian-builder
 

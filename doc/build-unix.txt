@@ -24,7 +24,7 @@ sudo apt-get install libdb4.8-dev libdb4.8++-dev
 
 sudo apt-get install libqrencode-dev
 
-git clone https://github.com/SIPS-Project/Sips.git
+git clone https://github.com/SipsCo/Sips.git
 cd Sips/src/secp256k1
 chmod +x autogen.sh
 sudo ./autogen.sh
@@ -55,7 +55,7 @@ sudo apt-get install libdb4.8-dev libdb4.8++-dev
 
 sudo apt-get install libqrencode-dev
 
-git clone https://github.com/SIPS-Project/Sips.git
+git clone https://github.com/SipsCo/Sips.git
 cd Sips/src/secp256k1
 chmod +x autogen.sh
 sudo ./autogen.sh
